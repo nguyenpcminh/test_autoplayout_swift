@@ -16,6 +16,11 @@
 		B06AE81F272B8C1500956666 /* RefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE81E272B8C1500956666 /* RefreshTests.swift */; };
 		B06AE829272B8C1500956666 /* RefreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE828272B8C1500956666 /* RefreshUITests.swift */; };
 		B06AE82B272B8C1500956666 /* RefreshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE82A272B8C1500956666 /* RefreshUITestsLaunchTests.swift */; };
+		B06AE838272BE87900956666 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE837272BE87900956666 /* UIView+Ext.swift */; };
+		B0706EC6272FD7FC00A930FA /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0706EC5272FD7FC00A930FA /* VideoCell.swift */; };
+		B0706EC9272FF5F800A930FA /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0706EC8272FF5F800A930FA /* Video.swift */; };
+		B0706ECC27313E8900A930FA /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0706ECB27313E8900A930FA /* UIImage+Ext.swift */; };
+		B0706ED02732886D00A930FA /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0706ECF2732886D00A930FA /* VideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		B06AE824272B8C1500956666 /* RefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06AE828272B8C1500956666 /* RefreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshUITests.swift; sourceTree = "<group>"; };
 		B06AE82A272B8C1500956666 /* RefreshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B06AE837272BE87900956666 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		B0706EC5272FD7FC00A930FA /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		B0706EC8272FF5F800A930FA /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		B0706ECB27313E8900A930FA /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		B0706ECF2732886D00A930FA /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 		B06AE806272B8C1200956666 /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
+				B0706ECD2732883800A930FA /* Views */,
+				B0706ECA27313E6A00A930FA /* Ext */,
+				B0706EC7272FF5DF00A930FA /* Models */,
 				B06AE807272B8C1200956666 /* AppDelegate.swift */,
 				B06AE809272B8C1200956666 /* SceneDelegate.swift */,
 				B06AE80B272B8C1200956666 /* ViewController.swift */,
@@ -106,6 +119,7 @@
 				B06AE810272B8C1400956666 /* Assets.xcassets */,
 				B06AE812272B8C1400956666 /* LaunchScreen.storyboard */,
 				B06AE815272B8C1400956666 /* Info.plist */,
+				B0706EC5272FD7FC00A930FA /* VideoCell.swift */,
 			);
 			path = Refresh;
 			sourceTree = "<group>";
@@ -125,6 +139,39 @@
 				B06AE82A272B8C1500956666 /* RefreshUITestsLaunchTests.swift */,
 			);
 			path = RefreshUITests;
+			sourceTree = "<group>";
+		};
+		B0706EC7272FF5DF00A930FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0706EC8272FF5F800A930FA /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0706ECA27313E6A00A930FA /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE837272BE87900956666 /* UIView+Ext.swift */,
+				B0706ECB27313E8900A930FA /* UIImage+Ext.swift */,
+			);
+			name = Ext;
+			sourceTree = "<group>";
+		};
+		B0706ECD2732883800A930FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0706ECE2732884000A930FA /* Video */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0706ECE2732884000A930FA /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B0706ECF2732886D00A930FA /* VideoController.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0706ECC27313E8900A930FA /* UIImage+Ext.swift in Sources */,
+				B0706EC6272FD7FC00A930FA /* VideoCell.swift in Sources */,
+				B0706ED02732886D00A930FA /* VideoController.swift in Sources */,
+				B0706EC9272FF5F800A930FA /* Video.swift in Sources */,
+				B06AE838272BE87900956666 /* UIView+Ext.swift in Sources */,
 				B06AE80C272B8C1200956666 /* ViewController.swift in Sources */,
 				B06AE808272B8C1200956666 /* AppDelegate.swift in Sources */,
 				B06AE80A272B8C1200956666 /* SceneDelegate.swift in Sources */,
@@ -367,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZUC9642GN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Refresh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -466,6 +519,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZUC9642GN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Refresh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
